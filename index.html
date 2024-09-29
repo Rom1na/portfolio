@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Romina Pérez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">
+            <a href="#">Curiosibit  -  Romina Pérez</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="https://curiosibit.blogspot.com/">Blog</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
+<main>
+
+    <p class="parrafo2">Hola!</p>
+    <p class="parrafo"> Mi nombre es Romina Pérez y decidí recopilar mis proyectos en un sólo lugar, para que sea más fácil acceder a ellos </p>
+    <p class="parrafo"> Utilizo diferentes lenguajes y plataformas, porque luego de un tiempo de estar escribiendo código y desarrollando ideas,</p> 
+    <p class="parrafo">me di cuenta que además de disfrutar aprendiendo y entendiendo nuevas tecnologías y paradigmas,</p>
+    <p class="parrafo">eso me da posibilidad de abordar un proyecto de manera tal de pensarlo en términos de eficiencia y necesidad, </p>
+    <p class="parrafo">sin sentirme condicionada por ningún lenguaje o paradigma en particular, </p>
+
+    <ul class="parrafotL">
+      <li>JavaScript -  Node  - React </li>
+      <li>Python - Flask</li>
+      <li>Java</li>
+      <li>SQL</li>
+      <li>Ux-Ui</li>
+
+    </ul>
+    
+   
+
+
+
+
+</main>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+    
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+    
+            // Burger Animation
+            burger.classList.toggle('toggle');
+        });
+    </script>   
+    
+    
+</body>
+</html>
