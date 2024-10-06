@@ -212,6 +212,11 @@ h1 {
    
   }
 
+  #logo{
+    border: 1px solid black; 
+    margin: 3em;
+    box-shadow: 0 4px 2px -2px gray;
+   }
 
 
 
@@ -293,6 +298,8 @@ h1 {
        align-items: center;
     }
 
+
+   
 
 
 
