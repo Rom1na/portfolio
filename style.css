@@ -28,6 +28,82 @@
   
 /*navbar*/
 
+.dataframe {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  background-color:var(--fondo);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin: 16px auto;
+  max-width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  
+  /*  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5) */
+  border: 1px solid var(--texto);
+
+}
+
+.card-container {
+ 
+
+}
+
+
+
+.dataframe:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #2196f3; /* celeste */
+}
+
+.parrafo {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.parrafot {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+  margin: 0;
+}
+
+.btn {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: coral;
+  color: white;
+}
+
+
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -128,22 +204,6 @@ a.btn{
   }
 
 
-.dataframe {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        padding: 1em;
-        border-radius: 15px;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-       /*  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5) */
-       border: 1px solid var(--texto);
-
-
-    }
     
     /* Title inside dataframe */
     .dataframe .title {
@@ -200,15 +260,7 @@ main{
 }
 
 
-.contProy{
-   margin-top: 2em;
-   display: flex;
-   flex-direction:column;
-   align-items: center;
-   
 
-
-}
 
 
 h1 {
