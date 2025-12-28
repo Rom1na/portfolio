@@ -45,7 +45,34 @@
 
         <div class="card-container">
 
-           
+                 <div class="dataframe">
+
+                    <p class="title">La tienda online - React</p>
+
+
+                    <p class="parrafo">Es la nueva versión de tienda realizada en Vanilla Js. en este caso, se implementó con React y también cuenta con CRUD que funciona con Mockapi, y una estructura para un usuario administrador, a la que se accede con credenciales (Para probarlo, pueden solicitarlas via e-mail).
+                     Como la versión anterior, también se utiliza el localStorage para guardar la info carrito de compras. (hasta la compra, que en caso es una 'simulación')
+                    </p>
+
+                    <p class="parrafot">React - Vercel - Mockapi</p>
+
+
+
+                    <a class="btn" href="https://react2025tt--2c.vercel.app/" target="_blank"
+                        rel="noopener noreferrer">Visitar</a>
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
 
 
                 <div class="dataframe">
@@ -290,6 +317,47 @@
     </main>
 
     <script>
+
+           
+/* crearCard("hola","chaujnkjnkjn","jknkknkjnk","linky"); */
+       
+
+
+
+         function crearCard( titulo, descripcion, stack, enlace) {
+                const card = document.createElement("div");
+                card.className = "dataframe";
+
+                const title = document.createElement("p");
+                title.className = "title";
+                title.textContent = titulo;
+
+                const parrafo = document.createElement("p");
+                parrafo.className = "parrafo";
+                parrafo.textContent = descripcion;
+
+                const parrafot = document.createElement("p");
+                parrafot.className = "parrafot";
+                parrafot.textContent = stack;
+
+                const btn = document.createElement("a");
+                btn.className = "btn";
+                btn.href = enlace;
+                btn.target = "_blank";
+                btn.rel = "noopener noreferrer";
+                btn.textContent = "Visitar";
+
+                card.append(title, parrafo, parrafot, btn);
+                
+                document.body.append(card);
+              /*   return card; */
+                                                               }
+
+    
+                            
+
+
+
         const burger = document.querySelector('.burger');
         const navLinks = document.querySelector('.nav-links');
 
